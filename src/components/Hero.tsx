@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const Hero = () => {
     return (
         <div className="bg-gradient-to-r from-[#0D1A3C] to-[#112A6B]">
-            {/* <div className="overflow-hidden bg-no-repeat bg-cover bg-[url('assets/svg/linear.svg')]"> */}
+            <div className="overflow-hidden bg-no-repeat bg-cover bg-[url('assets/svg/landingsv.svg')]">
                 <Navbar />
                 <div className="h-screen my-auto">
                     <section className="relative overflow-hidden h-full" >
@@ -42,7 +42,7 @@ const Hero = () => {
                         </div>
                     </section>
                 </div>
-            {/* </div> */}
+            </div>
         </div>
     )
 }

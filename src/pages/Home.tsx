@@ -18,7 +18,8 @@ const Home = () => {
                     </p>
 
                     <div className="my-4">
-                        <button className="bg-[#3B71F7] shadow-md py-6 md:py-6 px-8 md:px-12 rounded-full font-bold text-white"> Upload your Music</button>
+                    <button className="bg-[#3B71F7] shadow-md py-4 md:py-6 px-8 md:px-12 rounded-full font-bold text-white"> Upload your Music</button>
+                        {/* <button className="bg-[#3B71F7] shadow-md py-6 md:py-6 px-8 md:px-12 rounded-full font-bold text-white"> Upload your Music</button> */}
                     </div>
                 </div>
             </div>

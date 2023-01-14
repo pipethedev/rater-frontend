@@ -5,8 +5,10 @@ import UploadSvg from "../assets/svg/upload"
 import FeadbackSvg from '../assets/svg/feedback'
 import DiscoverSvg from '../assets/svg/discover'
 import MicSvg from '../assets/svg/mic'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Home = () => {
+    const navigate = useNavigate()
     return (
         <>
             <Hero />
@@ -18,7 +20,7 @@ const Home = () => {
                     </p>
 
                     <div className="my-4">
-                    <button className="bg-[#3B71F7] shadow-md py-4 md:py-6 px-8 md:px-12 rounded-full font-bold text-white"> Upload your Music</button>
+                    <Link to="/dashboard" onClick={() => navigate('/dashboard')} className="bg-[#3B71F7] shadow-md py-4 md:py-6 px-8 md:px-12 rounded-full font-bold text-white"> Upload your Music</Link>
                         {/* <button className="bg-[#3B71F7] shadow-md py-6 md:py-6 px-8 md:px-12 rounded-full font-bold text-white"> Upload your Music</button> */}
                     </div>
                 </div>
@@ -68,7 +70,7 @@ const Home = () => {
                                     <h2 className="font-semibold text-3xl sm:text-4xl mb-4">Ready to be Discovered?</h2>
                                     <h4 className="font-semibold text-base sm:text-xl mb-6 text-[#C0d1FD]">Share your tracks, get valuable feedbacks and connect with top industry experts, to take your music to the next level.</h4>
 
-                                    <button className="bg-[#FFC94C] shadow-md py-4 md:py-6 px-8 md:px-12 rounded-full font-bold text-black"> Upload your Music</button>
+                                    <button onClick={() => navigate('/dashboard')} className="bg-[#FFC94C] shadow-md py-4 md:py-6 px-8 md:px-12 rounded-full font-bold text-black"> Upload your Music</button>
                                 </div>
                             </div>
                         </div>

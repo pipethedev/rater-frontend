@@ -1,6 +1,9 @@
 import { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
+import Layout from './components/Layout/Layout'
+import RequiredRoute from './components/RequiredRoute'
+import Dashboard from './pages/Dashboard'
 import Faq from './pages/Faq'
 import Home from './pages/Home'
 import Price from './pages/Price'
@@ -13,6 +16,28 @@ const App = () => {
       <Route path='price' element={ <Price />}  />
       <Route path='faq' element={ <Faq />}  />
       <Route path='privacy' element={ <Privacy />}  />
+      <Route path='privacy' element={ <Privacy />}  />
+
+      <Route element={<RequiredRoute />}>
+            <Route path="/" element={<Layout />}>
+              <Route path="/dashboard" element={<Dashboard />} />
+              {/* <Route path="/wallet" element={<Dashboard />} /> */}
+              {/* <Route path="/loan-type" element={<LoanType />} />
+              <Route path="/staff-loan" element={<StaffLoan />} />
+              <Route path="/fastcash-loan" element={<FastcashLoan />} />
+              <Route path="/loan-application" element={<LoanApplication />} />
+              <Route path="/employment-record" element={<EmploymentRecord />} />
+
+              <Route path="/fedpay-loan" element={<FedPayLoan />} />
+              <Route path="/fedpay-loan-application" element={<FedPayLoanApplication />} />
+              <Route path="/transactions" element={<Transactions />} />
+              <Route path="/account" element={<Account />} />
+              <Route path="/debit-card" element={<DebitCard />} />
+              <Route path="/beneficiaries" element={<Beneficiaries />} /> */}
+            </Route>
+          </Route>
+          {/* 404 page */}
+          <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   )
 }

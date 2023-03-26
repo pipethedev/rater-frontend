@@ -7,7 +7,7 @@ const Footer = () => {
             <nav className="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
                 <div className='flex items-center'>
                     <Link to="/"><h1 className=' text-[#3B71F7] text-2xl font-bold'>M.Rater</h1></Link>
-                    <p className='text-sm font-bold ml-5'>Copyright @ 2022</p>
+                    <p className='text-sm font-bold ml-5'>Copyright @ {new Date(). getFullYear()}</p>
                 </div>
 
                 <ul className="flex items-center gap-4 text-sm my-4 text-[#666666]">

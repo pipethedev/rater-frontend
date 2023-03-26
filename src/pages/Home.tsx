@@ -70,7 +70,7 @@ const Home = () => {
                                     <h2 className="font-semibold text-3xl sm:text-4xl mb-4">Ready to be Discovered?</h2>
                                     <h4 className="font-semibold text-base sm:text-xl mb-6 text-[#C0d1FD]">Share your tracks, get valuable feedbacks and connect with top industry experts, to take your music to the next level.</h4>
 
-                                    <button onClick={() => navigate('/dashboard')} className="bg-[#FFC94C] shadow-md py-4 md:py-6 px-8 md:px-12 rounded-full font-bold text-black"> Upload your Music</button>
+                                    <button onClick={() => window.location.href = 'https://user.findcrest.com'} className="bg-[#FFC94C] shadow-md py-4 md:py-6 px-8 md:px-12 rounded-full font-bold text-black"> Upload your Music</button>
                                 </div>
                             </div>
                         </div>

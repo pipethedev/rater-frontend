@@ -85,5 +85,3 @@ const Home = () => {
 }
 
 export default Home
-// *#*#4636#*#6
-// *#9900#

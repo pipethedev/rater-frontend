@@ -9,7 +9,7 @@ const Sidebar = () => {
 
                 <div className={`pt-3`}>
                     <div className="flex items-center justify-between pb-10 px-5">
-                        <p className='text-[#3B71F7] text-xl font-bold'>M.Rater</p>
+                        <p className='text-[#3B71F7] text-xl font-bold'>Findcrest</p>
                         {/* <NotificationIcon className={`cursor-pointer ${!'open' && "scale-0 hidden"}`} /> */}
                     </div>
 

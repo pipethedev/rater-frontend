@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="p-5">
             <nav className="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
                 <div className='flex items-center'>
-                    <Link to="/"><h1 className=' text-[#3B71F7] text-2xl font-bold'>M.Rater</h1></Link>
+                    <Link to="/"><h1 className=' text-[#3B71F7] text-2xl font-bold'>Findcrest</h1></Link>
                     <p className='text-sm font-bold ml-5'>Copyright @ {new Date(). getFullYear()}</p>
                 </div>
 
